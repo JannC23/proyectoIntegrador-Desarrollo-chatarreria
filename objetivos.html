@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proyecto académico de sistema web para la gestión de chatarrerías y materiales reciclables.">
+  <title>Objetivos | Chatarrería</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-lg navbar-proyecto sticky-top" aria-label="Navegación principal">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">♻ Chatarrería</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link " href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#precios">Precios</a></li>
+        <li class="nav-item"><a class="nav-link " href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link active" href="objetivos.html">Objetivos</a></li>
+        <li class="nav-item"><a class="nav-link " href="avances.html">Avances</a></li>
+        <li class="nav-item"><span class="nav-link nav-link-pendiente" title="Pendiente: lo harán otros compañeros">Contacto</span></li>
+      </ul>
+      <div class="btn-group accesos" role="group" aria-label="Opciones de acceso en desarrollo">
+        <button type="button" class="btn btn-outline-success" disabled title="Acceso por desarrollar">Cliente</button>
+        <button type="button" class="btn btn-outline-success" disabled title="Acceso por desarrollar">Negocio</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<main class="flex-grow-1">
+<section class="cabecera-interior"><div class="container"><h1>Objetivos del proyecto</h1><p>Metas que orientan el diseño del sistema web para centros de reciclaje y acopio de materiales.</p></div></section>
+<section class="seccion"><div class="container"><h2 class="seccion-titulo mb-4">Objetivo general</h2><div class="panel-blanco p-4 p-lg-5"><p class="fs-5 mb-0">Diseñar y desarrollar un sistema web para chatarrerías que permita organizar la información de materiales reciclables, consultar y actualizar precios, apoyar el registro de compras y ventas y facilitar el control de inventario.</p></div></div></section>
+<section class="seccion seccion-alterna"><div class="container"><header class="mb-4"><h2 class="seccion-titulo">Objetivos específicos</h2><p class="seccion-subtitulo">Selecciona cada objetivo para ver su descripción.</p></header>
+<div class="accordion" id="acordeonObjetivos">
+  <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#objetivoUno" aria-expanded="true" aria-controls="objetivoUno">1. Organizar la información de materiales y precios</button></h3><div id="objetivoUno" class="accordion-collapse collapse show" data-bs-parent="#acordeonObjetivos"><div class="accordion-body">Definir un catálogo de materiales reciclables y preparar la consulta y actualización de sus tarifas por kilogramo.</div></div></div>
+  <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#objetivoDos" aria-expanded="false" aria-controls="objetivoDos">2. Facilitar el registro de compras y ventas</button></h3><div id="objetivoDos" class="accordion-collapse collapse" data-bs-parent="#acordeonObjetivos"><div class="accordion-body">Plantear formularios para registrar transacciones, materiales recibidos o despachados y sus cantidades.</div></div></div>
+  <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#objetivoTres" aria-expanded="false" aria-controls="objetivoTres">3. Mejorar el control del inventario</button></h3><div id="objetivoTres" class="accordion-collapse collapse" data-bs-parent="#acordeonObjetivos"><div class="accordion-body">Diseñar una vista para consultar existencias, peso acumulado y ubicación de los materiales almacenados.</div></div></div>
+  <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#objetivoCuatro" aria-expanded="false" aria-controls="objetivoCuatro">4. Definir el acceso según el tipo de usuario</button></h3><div id="objetivoCuatro" class="accordion-collapse collapse" data-bs-parent="#acordeonObjetivos"><div class="accordion-body">Separar la información pública de las funciones privadas previstas para vendedores y administradores del negocio.</div></div></div>
+  <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#objetivoCinco" aria-expanded="false" aria-controls="objetivoCinco">5. Preparar el seguimiento de las transacciones</button></h3><div id="objetivoCinco" class="accordion-collapse collapse" data-bs-parent="#acordeonObjetivos"><div class="accordion-body">Proponer un historial de movimientos y opciones futuras para generar comprobantes y reportes que apoyen la administración.</div></div></div>
+</div></div></section>
+</main>
+<footer class="pie mt-auto"><div class="container"><div class="row gy-3 align-items-center"><div class="col-lg-6"><strong>Chatarrería · Proyecto Integrador I</strong><p class="mb-0 mt-2 small">Universidad del Valle · Sede Tuluá<br>Cristhian David Zuluaga · Jann Carlo Martínez · Samuel Agudelo Sosa · Juan Manuel Gómez</p></div><div class="col-lg-6 text-lg-end small">© <span class="anio-actual">2026</span> · Proyecto académico<br>Diseño adaptable con Bootstrap</div></div></div></footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

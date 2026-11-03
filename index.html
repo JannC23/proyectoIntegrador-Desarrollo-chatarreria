@@ -1,32 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Integrador</title>
-
-    <!-- 1. Bootstrap CSS (Local) -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- 2. Tu CSS propio (Atención: en tu carpeta se llama style.css) -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proyecto académico de sistema web para la gestión de chatarrerías y materiales reciclables.">
+  <title>Inicio | Chatarrería</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-light text-dark">
-
-    <div class="container text-center my-5 p-5 bg-white rounded-3 shadow">
-        <h1 class="text-primary fw-bold display-4">¡Entorno 100% Configurado!</h1>
-        <p class="lead text-secondary my-3">
-            Bootstrap y los archivos locales ya están conectados correctamente.
-        </p>
-        <button class="btn btn-success btn-lg px-4 shadow-sm" id="boton Prueba">
-            Probar Botón de Bootstrap
-        </button>
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-lg navbar-proyecto sticky-top" aria-label="Navegación principal">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">♻ Chatarrería</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#precios">Precios</a></li>
+        <li class="nav-item"><a class="nav-link " href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link " href="objetivos.html">Objetivos</a></li>
+        <li class="nav-item"><a class="nav-link " href="avances.html">Avances</a></li>
+        <li class="nav-item"><span class="nav-link nav-link-pendiente" title="Pendiente: lo harán otros compañeros">Contacto</span></li>
+      </ul>
+      <div class="btn-group accesos" role="group" aria-label="Opciones de acceso en desarrollo">
+        <button type="button" class="btn btn-outline-success" disabled title="Acceso por desarrollar">Cliente</button>
+        <button type="button" class="btn btn-outline-success" disabled title="Acceso por desarrollar">Negocio</button>
+      </div>
     </div>
-
-    <!-- 3. Bootstrap JS (Local) -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-    <!-- 4. Tu JavaScript propio -->
-    <script src="js/main.js"></script>
+  </div>
+</nav>
+<main class="flex-grow-1">
+<!-- Imagen principal y puntos de carrusel: como en el wireframe -->
+<section class="banner" aria-label="Presentación del proyecto">
+  <div id="carruselPrincipal" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5500">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+      <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+      <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="img/banner-reciclaje.svg" alt="Representación de materiales reciclables"><div class="carousel-caption"><h1>Gestión de chatarrerías</h1><p>Un proyecto para organizar el reciclaje, los materiales y las operaciones de los centros de acopio.</p></div></div>
+      <div class="carousel-item"><img src="img/banner-precios.svg" alt="Representación de lista de precios"><div class="carousel-caption"><h2>Consulta de precios</h2><p>Conoce los materiales que contempla el proyecto y el módulo de cotización por kilogramo.</p></div></div>
+      <div class="carousel-item"><img src="img/banner-inventario.svg" alt="Representación de productos almacenados"><div class="carousel-caption"><h2>Control de inventarios</h2><p>Diseñamos herramientas para registrar materiales, cantidades y movimientos de bodega.</p></div></div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+  </div>
+</section>
+<section class="seccion" id="sobre-nosotros">
+  <div class="container">
+    <header class="text-center mb-5"><h2 class="seccion-titulo">Sobre nosotros</h2><div class="separador"></div></header>
+    <div class="row g-5 align-items-center">
+      <div class="col-md-6"><div class="marco-imagen"><img src="img/sobre-nosotros.svg" alt="Ilustración del reciclaje y aprovechamiento de materiales" loading="lazy"></div></div>
+      <div class="col-md-6"><p class="texto-nosotros">Somos un equipo de estudiantes de Ingeniería de Sistemas de la Universidad del Valle que propone un <strong>sistema web para chatarrerías y centros de reciclaje</strong>.</p><p class="texto-nosotros">Queremos contribuir a que los negocios organicen sus compras, ventas, precios e inventario, reduciendo el uso de registros manuales y facilitando la consulta de información.</p><a href="nosotros.html" class="btn btn-verde px-4 py-2">Conoce nuestro equipo</a></div>
+    </div>
+  </div>
+</section>
+<section class="seccion seccion-alterna" id="precios">
+  <div class="container"><header class="text-center mb-4"><h2 class="seccion-titulo">Materiales y precios</h2><p class="seccion-subtitulo mx-auto">Vista informativa del cotizador planeado para la chatarrería.</p></header>
+    <div class="panel-blanco p-3 p-md-4"><div class="table-responsive"><table class="table table-bordered align-middle tabla-precios mb-2"><thead><tr><th>Material</th><th>Precio por kilogramo</th></tr></thead><tbody><tr><td>Cobre</td><td>Por definir</td></tr><tr><td>Aluminio</td><td>Por definir</td></tr><tr><td>Hierro</td><td>Por definir</td></tr><tr><td>Plástico</td><td>Por definir</td></tr></tbody></table></div><p class="small text-secondary mb-0">Los valores se mostrarán cuando se implemente el módulo de actualización de tarifas. No son precios de mercado en tiempo real.</p></div>
+  </div>
+</section>
+</main>
+<footer class="pie mt-auto"><div class="container"><div class="row gy-3 align-items-center"><div class="col-lg-6"><strong>Chatarrería · Proyecto Integrador I</strong><p class="mb-0 mt-2 small">Universidad del Valle · Sede Tuluá<br>Cristhian David Zuluaga · Jann Carlo Martínez · Samuel Agudelo Sosa · Juan Manuel Gómez</p></div><div class="col-lg-6 text-lg-end small">© <span class="anio-actual">2026</span> · Proyecto académico<br>Diseño adaptable con Bootstrap</div></div></div></footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

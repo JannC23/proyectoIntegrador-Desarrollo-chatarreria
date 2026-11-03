@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proyecto académico de sistema web para la gestión de chatarrerías y materiales reciclables.">
+  <title>Avances | Chatarrería</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-lg navbar-proyecto sticky-top" aria-label="Navegación principal">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">♻ Chatarrería</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link " href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#precios">Precios</a></li>
+        <li class="nav-item"><a class="nav-link " href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link " href="objetivos.html">Objetivos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="avances.html">Avances</a></li>
+        <li class="nav-item"><span class="nav-link nav-link-pendiente" title="Pendiente: lo harán otros compañeros">Contacto</span></li>
+      </ul>
+      <div class="btn-group accesos" role="group" aria-label="Opciones de acceso en desarrollo">
+        <button type="button" class="btn btn-outline-success" disabled title="Acceso por desarrollar">Cliente</button>
+        <button type="button" class="btn btn-outline-success" disabled title="Acceso por desarrollar">Negocio</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<main class="flex-grow-1">
+<section class="cabecera-interior"><div class="container"><h1>Desarrollo y avances</h1><p>Registro de los análisis, diseños y wireframes que el equipo ha elaborado para construir la plataforma.</p></div></section>
+<section class="seccion"><div class="container"><header class="mb-4"><h2 class="seccion-titulo">Galería de avances</h2><p class="seccion-subtitulo">Estos materiales son prototipos y documentación del proyecto; no significan que los módulos privados ya estén programados.</p></header>
+<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4"><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-inicio.jpg" alt="Boceto de página de inicio" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Página de inicio</h3><p class="card-text mb-0">Diseño de la portada, la navegación, el carrusel y la sección “Sobre nosotros”.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-precios.jpeg" alt="Boceto de precios y cotización" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Precios y cotización</h3><p class="card-text mb-0">Boceto de la consulta de materiales, tabla de precios y cotización según el peso.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-inventario.jpg" alt="Boceto de panel de inventario" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Panel de inventario</h3><p class="card-text mb-0">Propuesta de tabla para productos, cantidades, unidades, fechas y ubicación.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-login.jpeg" alt="Boceto de acceso al sistema" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Acceso al sistema</h3><p class="card-text mb-0">Diseño preliminar del formulario de correo y contraseña para usuarios autorizados.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-registro.jpeg" alt="Boceto de registro de usuario" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Registro de usuario</h3><p class="card-text mb-0">Boceto del formulario de registro con información básica de acceso.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-contacto.jpeg" alt="Boceto de contacto (solo diseño)" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Contacto (solo diseño)</h3><p class="card-text mb-0">Wireframe de la sección de contacto. La programación de esta página queda pendiente para otros integrantes.</p></div></article></div></div>
+<div class="text-center mt-5"><button id="botonDetallesAvances" class="btn btn-verde px-4 py-2" type="button" aria-expanded="false" aria-controls="detallesAvances">Mostrar detalles</button></div>
+<div id="detallesAvances" class="panel-blanco p-4 mt-4 d-none"><h3 class="h4 fw-bold">¿Qué hemos trabajado?</h3><ul class="mb-0"><li>Identificación de problemas en los registros manuales de chatarrerías.</li><li>Organización de módulos públicos y privados del sitio.</li><li>Diseño de wireframes de escritorio y celular.</li><li>Inicio de la implementación informativa con HTML, CSS, Bootstrap y JavaScript.</li></ul></div>
+</div></section>
+</main>
+<footer class="pie mt-auto"><div class="container"><div class="row gy-3 align-items-center"><div class="col-lg-6"><strong>Chatarrería · Proyecto Integrador I</strong><p class="mb-0 mt-2 small">Universidad del Valle · Sede Tuluá<br>Cristhian David Zuluaga · Jann Carlo Martínez · Samuel Agudelo Sosa · Juan Manuel Gómez</p></div><div class="col-lg-6 text-lg-end small">© <span class="anio-actual">2026</span> · Proyecto académico<br>Diseño adaptable con Bootstrap</div></div></div></footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
