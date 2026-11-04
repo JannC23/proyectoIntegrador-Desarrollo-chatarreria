@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Proyecto académico de sistema web para la gestión de chatarrerías y materiales reciclables.">
   <title>Avances | Chatarrería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/actividad2.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
 <nav class="navbar navbar-expand-lg navbar-proyecto sticky-top" aria-label="Navegación principal">
   <div class="container">
-    <a class="navbar-brand" href="index.html">♻ Chatarrería</a>
+    <a class="navbar-brand marca-proyecto" href="index.html" aria-label="Chatarrería: volver al inicio"><img class="logo-cabecera" src="img/logo-chatarreria.png" width="413" height="137" alt="Chatarrería. Más control para reciclar mejor."></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="menuPrincipal">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -32,12 +36,69 @@
 <main class="flex-grow-1">
 <section class="cabecera-interior"><div class="container"><h1>Desarrollo y avances</h1><p>Registro de los análisis, diseños y wireframes que el equipo ha elaborado para construir la plataforma.</p></div></section>
 <section class="seccion"><div class="container"><header class="mb-4"><h2 class="seccion-titulo">Galería de avances</h2><p class="seccion-subtitulo">Estos materiales son prototipos y documentación del proyecto; no significan que los módulos privados ya estén programados.</p></header>
-<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4"><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-inicio.jpg" alt="Boceto de página de inicio" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Página de inicio</h3><p class="card-text mb-0">Diseño de la portada, la navegación, el carrusel y la sección “Sobre nosotros”.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-precios.jpeg" alt="Boceto de precios y cotización" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Precios y cotización</h3><p class="card-text mb-0">Boceto de la consulta de materiales, tabla de precios y cotización según el peso.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-inventario.jpg" alt="Boceto de panel de inventario" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Panel de inventario</h3><p class="card-text mb-0">Propuesta de tabla para productos, cantidades, unidades, fechas y ubicación.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-login.jpeg" alt="Boceto de acceso al sistema" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Acceso al sistema</h3><p class="card-text mb-0">Diseño preliminar del formulario de correo y contraseña para usuarios autorizados.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-registro.jpeg" alt="Boceto de registro de usuario" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Registro de usuario</h3><p class="card-text mb-0">Boceto del formulario de registro con información básica de acceso.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-contacto.jpeg" alt="Boceto de contacto (solo diseño)" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Contacto (solo diseño)</h3><p class="card-text mb-0">Wireframe de la sección de contacto. La programación de esta página queda pendiente para otros integrantes.</p></div></article></div></div>
+<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4"><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-inicio.jpg" alt="Boceto de página de inicio" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Página de inicio</h3><p class="card-text mb-0">Diseño de la portada, la navegación, el carrusel y la sección “Sobre nosotros”.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-precios.jpeg" alt="Boceto de precios y cotización" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Precios y cotización</h3><p class="card-text mb-0">Boceto de la consulta de materiales, tabla de precios y cotización según el peso.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-inventario.jpg" alt="Boceto de panel de inventario" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Panel de inventario</h3><p class="card-text mb-0">Propuesta de tabla para productos, cantidades, unidades, fechas y ubicación.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-login.jpeg" alt="Boceto de acceso al sistema" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Acceso al sistema</h3><p class="card-text mb-0">Diseño preliminar del formulario de correo y contraseña para usuarios autorizados.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-registro.jpeg" alt="Boceto de registro de usuario" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Registro de usuario</h3><p class="card-text mb-0">Boceto del formulario de registro con información básica de acceso.</p></div></article></div><div class="col"><article class="card tarjeta-elevada tarjeta-avance h-100"><img src="img/wireframe-contacto.jpeg" alt="Boceto de contacto (solo diseño)" loading="lazy"><div class="card-body p-4"><span class="etiqueta align-self-start mb-3">Wireframe</span><h3 class="h5 fw-bold">Contacto</h3><p class="card-text mb-0">Wireframe de la sección de contacto. La página de contacto ya fue incorporada al repositorio por el equipo.</p></div></article></div></div>
 <div class="text-center mt-5"><button id="botonDetallesAvances" class="btn btn-verde px-4 py-2" type="button" aria-expanded="false" aria-controls="detallesAvances">Mostrar detalles</button></div>
 <div id="detallesAvances" class="panel-blanco p-4 mt-4 d-none"><h3 class="h4 fw-bold">¿Qué hemos trabajado?</h3><ul class="mb-0"><li>Identificación de problemas en los registros manuales de chatarrerías.</li><li>Organización de módulos públicos y privados del sitio.</li><li>Diseño de wireframes de escritorio y celular.</li><li>Inicio de la implementación informativa con HTML, CSS, Bootstrap y JavaScript.</li></ul></div>
 </div></section>
+
+<!-- Actividad 2 de Proyecto Integrador I: Tipografía y color -->
+<section class="seccion seccion-alterna" id="tipografia-color" aria-labelledby="actividad2-titulo">
+  <div class="container">
+    <header class="text-center mb-5">
+      <span class="etiqueta mb-3">Actividad 2 · Diseño visual</span>
+      <h2 class="seccion-titulo mt-3" id="actividad2-titulo">Tipografía y color</h2>
+      <p class="seccion-subtitulo mx-auto">Elecciones de diseño aplicadas a nuestros wireframes de la chatarrería.</p>
+      <a class="btn btn-outline-success mt-2" href="docs/Actividad_2_Tipografia_y_color.pdf" target="_blank" rel="noopener">Ver actividad en PDF</a>
+    </header>
+
+    <h3 class="titulo-actividad mb-3">1. Selección de tipografía</h3>
+    <div class="row g-4 mb-5">
+      <div class="col-md-6"><article class="tarjeta-elevada p-4">
+        <span class="etiqueta mb-3">Tipografía principal</span>
+        <p class="ejemplo-letra-titulo fuente-principal mb-3">Roboto Condensed</p>
+        <p class="mb-1"><strong>Uso:</strong> títulos, encabezados y botones.</p>
+        <p class="mb-0">Su forma clara y compacta ayuda a destacar las secciones y a organizar la información sin ocupar demasiado espacio.</p>
+      </article></div>
+      <div class="col-md-6"><article class="tarjeta-elevada p-4">
+        <span class="etiqueta mb-3">Tipografía secundaria</span>
+        <p class="ejemplo-letra-cuerpo fuente-secundaria fw-bold mb-3">Open Sans · Texto de lectura</p>
+        <p class="mb-1"><strong>Uso:</strong> párrafos, descripciones y tablas.</p>
+        <p class="mb-0">Su lectura es cómoda en pantallas de diferentes tamaños y permite diferenciar el texto de los títulos.</p>
+      </article></div>
+    </div>
+
+    <h3 class="titulo-actividad mb-3">2. Paleta de colores</h3>
+    <p class="mb-3">Utilizamos verdes relacionados con el reciclaje, fondos claros y letras oscuras. Separamos los colores de botones, textos y fondos para mantener una lectura clara.</p>
+    <div class="row row-cols-2 row-cols-md-4 row-cols-xl-7 g-3 mb-3">
+      <div class="col"><div class="panel-blanco p-2 h-100"><div class="muestra-color" style="background:#103D30"></div><div class="p-2"><strong>Verde oscuro</strong><div class="color-hex">#103D30</div><small>Títulos y marca</small></div></div></div>
+      <div class="col"><div class="panel-blanco p-2 h-100"><div class="muestra-color" style="background:#1E6346"></div><div class="p-2"><strong>Verde principal</strong><div class="color-hex">#1E6346</div><small>Botones y enlaces</small></div></div></div>
+      <div class="col"><div class="panel-blanco p-2 h-100"><div class="muestra-color" style="background:#E8F3ED"></div><div class="p-2"><strong>Verde suave</strong><div class="color-hex">#E8F3ED</div><small>Fondos de apoyo</small></div></div></div>
+      <div class="col"><div class="panel-blanco p-2 h-100"><div class="muestra-color" style="background:#627066"></div><div class="p-2"><strong>Gris verdoso</strong><div class="color-hex">#627066</div><small>Texto secundario</small></div></div></div>
+      <div class="col"><div class="panel-blanco p-2 h-100"><div class="muestra-color" style="background:#F7FAF8"></div><div class="p-2"><strong>Fondo claro</strong><div class="color-hex">#F7FAF8</div><small>Fondo general</small></div></div></div>
+      <div class="col"><div class="panel-blanco p-2 h-100"><div class="muestra-color" style="background:#FFFFFF"></div><div class="p-2"><strong>Blanco</strong><div class="color-hex">#FFFFFF</div><small>Tarjetas</small></div></div></div>
+      <div class="col"><div class="panel-blanco p-2 h-100"><div class="muestra-color" style="background:#102A20"></div><div class="p-2"><strong>Verde profundo</strong><div class="color-hex">#102A20</div><small>Pie de página</small></div></div></div>
+    </div>
+    <p class="mb-5 small">El verde se relaciona con la naturaleza y la reutilización de materiales. Los tonos oscuros sobre blanco y el texto blanco sobre verde oscuro mejoran la legibilidad.</p>
+
+    <h3 class="titulo-actividad mb-3">3. Logo y eslogan</h3>
+    <div class="panel-blanco p-4 mb-5">
+      <div class="row align-items-center g-4"><div class="col-lg-6 text-center"><img class="marca-muestra" src="img/logo-chatarreria.png" alt="Logo oficial: Chatarrería. Más control para reciclar mejor." loading="lazy"></div>
+      <div class="col-lg-6"><h4 class="h5 fw-bold">Chatarrería</h4><p class="fs-5 fw-semibold mb-2">“Más control para reciclar mejor.”</p><p class="mb-0">El logo identifica el proyecto con el reciclaje. El eslogan expresa la idea de organizar mejor los materiales, precios e inventarios.</p></div></div>
+    </div>
+
+    <h3 class="titulo-actividad mb-3">4. Aplicación a los wireframes</h3>
+    <p class="mb-4">Pasamos el boceto de inicio a una interfaz digital: conservamos la barra de navegación, la imagen principal con carrusel y la sección «Sobre nosotros», agregando la identidad visual y el diseño adaptable.</p>
+    <div class="row g-4">
+      <div class="col-lg-4"><figure class="muestra-aplicacion mb-0"><img src="img/wireframe-inicio.jpg" alt="Wireframe original de la página de inicio" loading="lazy"><figcaption>Wireframe original: distribución planeada.</figcaption></figure></div>
+      <div class="col-lg-4"><figure class="muestra-aplicacion mb-0"><img class="muestra-sitio" src="img/avance-diseno-escritorio.png" alt="Propuesta visual de la página en computador con logo, colores y tipografía" loading="lazy"><figcaption>Vista digital: computador.</figcaption></figure></div>
+      <div class="col-lg-4"><figure class="muestra-aplicacion mb-0"><img class="imagen-movil" src="img/avance-diseno-movil.png" alt="Propuesta visual adaptada a celular" loading="lazy"><figcaption>Vista digital: celular.</figcaption></figure></div>
+    </div>
+    <div class="panel-blanco p-4 mt-4"><p class="mb-0"><strong>Jerarquía y legibilidad:</strong> títulos de mayor tamaño y peso, texto normal de aproximadamente 16 px, separación entre secciones y contraste entre fondo y texto. La navegación y el contenido se adaptan al ancho de la pantalla mediante Bootstrap.</p></div>
+  </div>
+</section>
+
 </main>
-<footer class="pie mt-auto"><div class="container"><div class="row gy-3 align-items-center"><div class="col-lg-6"><strong>Chatarrería · Proyecto Integrador I</strong><p class="mb-0 mt-2 small">Universidad del Valle · Sede Tuluá<br>Cristhian David Zuluaga · Jann Carlo Martínez · Samuel Agudelo Sosa · Juan Manuel Gómez</p></div><div class="col-lg-6 text-lg-end small">© <span class="anio-actual">2026</span> · Proyecto académico<br>Diseño adaptable con Bootstrap</div></div></div></footer>
+<footer class="pie mt-auto"><div class="container"><div class="row gy-3 align-items-center"><div class="col-lg-6"><strong>Chatarrería · Proyecto Integrador I</strong><div class="eslogan-footer">Más control para reciclar mejor.</div><p class="mb-0 mt-2 small">Universidad del Valle · Sede Tuluá<br>Cristhian David Zuluaga · Jann Carlo Martínez · Samuel Agudelo Sosa · Juan Manuel Gómez</p></div><div class="col-lg-6 text-lg-end small">© <span class="anio-actual">2026</span> · Proyecto académico<br>Diseño adaptable con Bootstrap</div></div></div></footer>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
