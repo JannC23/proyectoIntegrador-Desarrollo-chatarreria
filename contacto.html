@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proyecto académico de sistema web para la gestión de chatarrerías y materiales reciclables.">
+  <title>Contacto | Chatarrería</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-lg navbar-proyecto sticky-top" aria-label="Navegación principal">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">♻ Chatarrería</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link " href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#precios">Precios</a></li>
+        <li class="nav-item"><a class="nav-link " href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link " href="objetivos.html">Objetivos</a></li>
+        <li class="nav-item"><a class="nav-link " href="avances.html">Avances</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+      <div class="btn-group accesos" role="group" aria-label="Opciones de acceso en desarrollo">
+        <button type="button" class="btn btn-outline-success" disabled title="Acceso por desarrollar">Cliente</button>
+        <button type="button" class="btn btn-outline-success" disabled title="Acceso por desarrollar">Negocio</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<main class="flex-grow-1">
+<section class="cabecera-interior"><div class="container"><h1>Contacto</h1><p>¿Tienes preguntas o sugerencias sobre el proyecto? Escríbenos y el equipo revisará tu mensaje.</p></div></section>
+<section class="seccion"><div class="container"><div class="row g-4">
+  <div class="col-lg-7">
+    <div class="panel-blanco p-4 p-lg-5">
+      <h2 class="h3 fw-bold titulo-form mb-4">Envíanos un mensaje</h2>
+      <form id="formContacto" novalidate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label fw-semibold">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo" autocomplete="name" maxlength="60" required>
+          <div class="invalid-feedback"></div>
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label fw-semibold">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" name="correo" placeholder="nombre@correo.com" autocomplete="email" maxlength="80" required>
+          <div class="invalid-feedback"></div>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos tu duda o sugerencia" maxlength="500" required></textarea>
+          <div class="invalid-feedback"></div>
+          <div class="contador-mensaje" aria-live="polite"><span id="contadorMensaje">0</span>/500</div>
+        </div>
+        <button type="submit" class="btn btn-verde px-4 py-2" id="btnEnviar">Enviar mensaje</button>
+      </form>
+    </div>
+  </div>
+  <div class="col-lg-5">
+    <aside class="tarjeta-elevada p-4 p-lg-5">
+      <h2 class="h4 fw-bold titulo-form mb-2">Datos del proyecto</h2>
+      <ul class="info-contacto">
+        <li><span class="icono-tarjeta" aria-hidden="true">U</span><div><strong>Universidad del Valle</strong>Sede Tuluá · Ingeniería de Sistemas</div></li>
+        <li><span class="icono-tarjeta" aria-hidden="true">P</span><div><strong>Proyecto Integrador I</strong>Docente: Mg(c). Juan Pablo Pinillos Reina</div></li>
+        <li><span class="icono-tarjeta" aria-hidden="true">@</span><div><strong>Correo del equipo</strong>Por definir</div></li>
+      </ul>
+      <p class="small text-secondary mb-0">Este formulario es demostrativo: valida los datos en el navegador, pero todavía no los envía a ningún servidor.</p>
+    </aside>
+  </div>
+</div></div></section>
+</main>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="toastContacto" class="toast align-items-center text-bg-success border-0" role="status" aria-live="polite" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body" id="toastTexto"></div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button>
+    </div>
+  </div>
+</div>
+<footer class="pie mt-auto"><div class="container"><div class="row gy-3 align-items-center"><div class="col-lg-6"><strong>Chatarrería · Proyecto Integrador I</strong><p class="mb-0 mt-2 small">Universidad del Valle · Sede Tuluá<br>Cristhian David Zuluaga · Jann Carlo Martínez · Samuel Agudelo Sosa · Juan Manuel Gómez</p></div><div class="col-lg-6 text-lg-end small">© <span class="anio-actual">2026</span> · Proyecto académico<br>Diseño adaptable con Bootstrap</div></div></div></footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

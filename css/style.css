@@ -52,3 +52,15 @@ a { text-underline-offset:3px; }
 .etiqueta { display:inline-block; background:var(--verde-suave); color:var(--verde-oscuro); border-radius:40px; padding:5px 12px; font-size:.82rem; font-weight:700; }
 @media(max-width:991.98px) { .accesos { margin-top:.7rem; } .navbar-nav .nav-link { padding:.48rem 0!important; } }
 @media(max-width:575.98px) { .banner .carousel-item { height:355px; } .banner .carousel-caption { left:9%; right:9%; bottom:17%; } .banner .carousel-item::after { background:linear-gradient(90deg,rgba(4,29,19,.85),rgba(4,29,19,.55)); } .seccion { padding:45px 0; } .cabecera-interior { padding:44px 0; } .tarjeta-avance img { height:160px; } }
+
+
+.titulo-form { color:var(--verde-oscuro); }
+.form-control { border-radius:12px; padding:.7rem .9rem; border-color:#cfe0d4; }
+.form-control:focus { border-color:var(--verde); box-shadow:0 0 0 .2rem #2f88553b; }
+.contador-mensaje { margin-top:.3rem; font-size:.82rem; color:var(--muted); text-align:right; }
+.info-contacto { list-style:none; padding:0; margin:0 0 1rem; }
+.info-contacto li { display:flex; gap:1rem; align-items:flex-start; padding:1rem 0; border-bottom:1px solid #e3ede6; }
+.info-contacto li:last-child { border-bottom:0; }
+.info-contacto .icono-tarjeta { flex:none; }
+.info-contacto strong { display:block; color:var(--verde-oscuro); }
+.toast { border-radius:14px; }
