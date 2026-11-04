@@ -1,0 +1,32 @@
+ACTUALIZACIÓN DE LA CHATARRERÍA - ACTIVIDAD 2 (4 de noviembre de 2026)
+Base: repositorio https://github.com/JannC23/proyectoIntegrador-Desarrollo-chatarreria, rama main, consultado el 4/11/2026.
+
+ARCHIVOS A REEMPLAZAR:
+  index.html
+  nosotros.html
+  objetivos.html
+  avances.html
+  contacto.html  (SOLO se modifican logo, eslogan y enlaces de tipografía/CSS; se conserva íntegro el formulario, su toast y su estructura)
+
+ARCHIVOS NUEVOS A AGREGAR:
+  css/actividad2.css
+  img/logo-chatarreria.png
+  img/avance-diseno-escritorio.png
+  img/avance-diseno-movil.png
+  docs/Actividad_2_Tipografia_y_color.pdf
+
+NO REEMPLAZAR NI MODIFICAR:
+  css/style.css
+  js/main.js
+  css/bootstrap.min.css
+  js/bootstrap.bundle.min.js
+  README.md, LICENSE, demás imágenes y archivos.
+
+PASOS:
+1. Antes de empezar, sincroniza el repositorio (git pull) y comprueba que no tengas cambios locales sin guardar.
+2. Extrae este ZIP. Copia sus archivos sobre la raíz de tu proyecto, conservando carpetas.
+3. Si alguien modificó alguna de las cinco páginas HTML después de la fecha indicada, revisa las diferencias antes de reemplazar.
+4. Abre index.html y avances.html con Live Server. Comprueba que el logo aparezca, Contacto siga accesible, y el formulario valide los campos.
+5. Sube tus cambios a una rama o haz un commit con el mensaje: "Actividad 2: tipografía, color e identidad visual".
+
+NOTA: El formulario de contacto sigue siendo una demostración: su envío se simula en el navegador, no envía datos a un servidor.

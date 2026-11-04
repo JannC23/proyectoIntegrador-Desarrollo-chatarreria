@@ -1,0 +1,30 @@
+/* Actividad 2: estilos adicionales. No modifica style.css del equipo. */
+
+:root {
+  --fuente-principal: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
+  --fuente-secundaria: "Open Sans", "Segoe UI", Arial, sans-serif;
+}
+body { font-family:var(--fuente-secundaria); font-size:16px; line-height:1.65; }
+h1,h2,h3,h4,h5,h6,.navbar-nav .nav-link,.btn,.rol,.etiqueta {
+  font-family:var(--fuente-principal);
+}
+h1,h2,h3 { letter-spacing:-.012em; }
+.marca-proyecto { margin-right:1rem; display:flex; align-items:center; flex-shrink:0; padding:0; }
+.logo-cabecera { display:block; height:67px; width:auto; max-width:min(225px,65vw); object-fit:contain; }
+.eslogan-footer { color:#b7e6c7; font-size:.89rem; margin-top:2px; }
+.lema-banner { font-family:var(--fuente-secundaria); font-weight:700; color:#dcf5e4; }
+.fuente-principal { font-family:var(--fuente-principal); }
+.fuente-secundaria { font-family:var(--fuente-secundaria); }
+.ejemplo-letra-titulo { font-size:clamp(1.8rem,3vw,2.4rem); line-height:1.15; color:var(--verde-oscuro); font-weight:800; }
+.ejemplo-letra-cuerpo { font-size:1.05rem; line-height:1.85; }
+.muestra-color { border-radius:14px; height:86px; border:1px solid #d6ded8; }
+.color-hex { font-size:.92rem; color:#505e54; font-weight:600; }
+.marca-muestra { width:100%; height:auto; max-width:420px; }
+.titulo-actividad { font-size:1.35rem; color:var(--verde-oscuro); font-weight:800; }
+.muestra-aplicacion { background:#fff; border:1px solid #dce8df; border-radius:18px; overflow:hidden; box-shadow:0 8px 25px #193d2510; height:100%; }
+.muestra-aplicacion img { display:block; width:100%; height:265px; object-fit:contain; background:#fff; }
+.muestra-aplicacion .imagen-movil { object-fit:contain; object-position:top; }
+.muestra-aplicacion figcaption { padding:12px 18px 16px; color:var(--muted); font-size:.93rem; }
+.muestra-sitio { object-position:top; }
+@media(max-width:991.98px) { .marca-proyecto { margin-right:0; } .logo-cabecera { height:63px; } }
+@media(max-width:575.98px) { .logo-cabecera { height:59px; } .muestra-aplicacion img { height:230px; } }
